@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from spaceblog import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    # url(r'^/$', views.posts ),
+    # url(r'^post/(?<pk>\d+)$', views.post_detail, name = 'post_detail' ),
 ]
